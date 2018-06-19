@@ -1,0 +1,5 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="19" height="19" stroke="white"/>
+<line y1="-0.5" x2="20" y2="-0.5" transform="translate(10) rotate(90)" stroke="white"/>
+<line y1="-0.5" x2="20" y2="-0.5" transform="translate(0 10.2)" stroke="white"/>
+</svg>

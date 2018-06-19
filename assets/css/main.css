@@ -1,0 +1,273 @@
+body{
+    background: #131313;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) */
+
+
+
+container{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    margin: 0;
+    margin-left: 5%;
+    max-width: 20%;
+    min-width: 120px;
+}
+
+.menu-hamburguer{
+    margin-right: 5%;
+    width: 10%;
+    max-width: 50px;
+    min-width: 30px;
+}
+
+header{
+    width: 100%;
+    height: 88vh;
+    /* margin-top: 5%; */
+    background: url("../img/venusInput.svg") no-repeat center;
+    position: relative;
+}
+
+.venus{
+    /* background: url("../img/venusInput.svg") no-repeat center; */
+    width: 100%;
+}
+
+.rotate{
+    transform: rotate(-18deg);
+    /* position: absolute; */
+}
+
+.input{
+    transform: skewX(-19deg);
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 406px;
+    right: 65%;
+    /* padding: 2px 30px */
+
+    
+}
+
+.input input{
+    background: transparent;
+    border: none;
+    transform: skewX(2deg);
+    /* padding: 20px 70px; */
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+.input input::placeholder{
+    color: white;
+    font-size: .8em;
+   
+}
+
+
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+
+.divNuvem{
+    position: relative;
+}
+
+.imgNuvem{
+    width: 550px;
+    position: relative;
+    top: 546px;
+    right: 28%
+}
+
+.retornoDaBusca{
+    /* background: url("../img/grid-bordeless.svg") no-repeat center; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.cards{
+    background: url("../img/grid-bordeless.svg") no-repeat center;
+    max-width: 300px; 
+    margin: 30px;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.info{
+    width: 100%;
+    background: #3C2DCB 50%;
+    margin: 0 auto;
+    color: white;
+    /* max-width: 300px; */
+}
+
+.nome {
+    text-align: center;
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nome a {
+    color: #fff;
+    font-family: 'Audiowide', monospace;
+    font-size: 1rem;
+    padding-top: 10px; 
+    text-align: center;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+
+  .nome a:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+  }
+
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+  }
+  
+.descricao {
+    text-align: justify;
+    padding: 0 30px 20px 30px;
+    margin: 0;
+    font-size: .8em;
+}
+
+
+/* ::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- 
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ } */
+
+
+
+@media(min-width: 700px){
+    
+    
+
+    .logo{
+        margin-left: 80px; 
+    }
+
+    .input{
+        top: 414px;
+        right: 55%
+    }
+
+    .imgNuvem{
+        width: 800px;
+        position: relative;
+        top: 530px;
+        right: -9%
+    }
+}
+
+@media(min-width: 1100px){
+
+    .menu-hamburguer{
+        display: none;
+    }
+
+    .input{
+        top: 405px;
+        right: 53.5%
+    }
+
+    .logo{
+        position: absolute;
+        top: 50px;
+    }
+
+    header{
+        height: 100vh;
+    }
+
+    .imgNuvem{
+        width: 700px;
+        position: relative;
+        top: 488px;
+        right: -25%
+    }
+    
+    .retornoDaBusca{
+        margin-top: 200px;
+    }
+}
