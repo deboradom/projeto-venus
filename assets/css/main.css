@@ -14,6 +14,7 @@ container{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -32,11 +33,10 @@ nav{
 }
 
 header{
+    position: relative;
     width: 100%;
     height: 88vh;
-    /* margin-top: 5%; */
     background: url("../img/venusInput.svg") no-repeat center;
-    position: relative;
 }
 
 .venus{
@@ -45,29 +45,25 @@ header{
 }
 
 .rotate{
-    transform: rotate(-18deg);
-    /* position: absolute; */
+    position: absolute;
+    left: 49%;
+    bottom: 28.5%;
+    width: 80%;
+    max-width: 297px;
+    transform: rotate(-17deg) translateX(-50%);
 }
 
 .input{
-    transform: skewX(-19deg);
-    /* border: 2px solid white; */
-    position: absolute;
-    top: 406px;
-    right: 65%;
-    /* padding: 2px 30px */
-
-    
+    transform: skewX(-17deg);
 }
 
 .input input{
     background: transparent;
     border: none;
-    transform: skewX(2deg);
     /* padding: 20px 70px; */
-    width: 200px;
-    height: 60px;
-    text-align: center;
+    padding: 0.3rem;
+    width: 250px;
+    height: 59px;
     color: white;
     font-size: 1.3em;
 }
@@ -98,14 +94,18 @@ header{
 
 
 .divNuvem{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 220px;
+    width: 100%;
+    transform: translate(-50%, 50%);
 }
 
 .imgNuvem{
-    width: 550px;
-    position: relative;
-    top: 546px;
-    right: 28%
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .cadastradas{
@@ -270,15 +270,8 @@ a {
     }
 
     .input{
-        top: 414px;
-        right: 55%
-    }
-
-    .imgNuvem{
-        width: 800px;
-        position: relative;
-        top: 530px;
-        right: -9%
+        /* top: 414px;
+        right: 55% */
     }
 }
 
@@ -288,9 +281,10 @@ a {
         display: none;
     }
 
-    .input{
-        top: 405px;
-        right: 53.5%
+    .rotate {
+        left: 49.5%;
+        bottom: 31%;
+        width: 69%;
     }
 
     .logo{
@@ -300,13 +294,6 @@ a {
 
     header{
         height: 100vh;
-    }
-
-    .imgNuvem{
-        width: 700px;
-        position: relative;
-        top: 488px;
-        right: -25%
     }
     
     .cadastradas{
