@@ -46,11 +46,12 @@ header{
 
 .rotate{
     position: absolute;
-    left: 49%;
-    bottom: 28.5%;
-    width: 80%;
+    /* position: fixed; */
+    left: 52.5%;
+    bottom: 30.5%;
+    width: 67%;
     max-width: 297px;
-    transform: rotate(-17deg) translateX(-50%);
+    transform: rotate(-17deg) translateX(-52%);
 }
 
 .input{
@@ -62,7 +63,7 @@ header{
     border: none;
     /* padding: 20px 70px; */
     padding: 0.3rem;
-    width: 250px;
+    width: 200px;
     height: 59px;
     color: white;
     font-size: 1.3em;
@@ -71,26 +72,10 @@ header{
 .input input::placeholder{
     color: white;
     font-size: .8em;
-   
+    text-align: center;
 }
 
 
-
-::-webkit-input-placeholder {
-    text-align: center;
- }
- 
- :-moz-placeholder { /* Firefox 18- */
-    text-align: center;  
- }
- 
- ::-moz-placeholder {  /* Firefox 19+ */
-    text-align: center;  
- }
- 
- :-ms-input-placeholder {  
-    text-align: center; 
- }
 
 
 .divNuvem{
@@ -122,60 +107,37 @@ header{
     background: url("../img/grid-bordeless.svg") no-repeat center;
     max-width: 300px; 
     margin: 30px;
+    height: 75vh;
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
+    -moz-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
+    box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
 }
+
 
 .foto{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    /* background: blue;
-    opacity:0.4;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    z-index: 1; */
+    /* position: relative; */
 }
 
 .foto img{
     width: 200px;
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 10%;
+    position: relative;
     
 }
-
-/* .overlay1{
-    position: absolute;
-    background: purple;
-    opacity:0.4;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    z-index: 1;
-    margin-top: 50px;
-    right: 14%
-} */
 
 .overlay{
     position: absolute;
     background: purple;
     opacity: 0.5;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    z-index: 2;
-    margin-top: 50px
-}
-
-.overlay2{
-    position: absolute;
-    background: blue;
-    opacity: 0.2;
     width: 210px;
     height: 210px;
     border-radius: 100%;
-    z-index: 1;
-    margin-top: 50px
+    /* z-index: 2; */
+    transform: translateY(7%)
 }
 
 .info{
@@ -210,72 +172,55 @@ a {
   }
   
 
-  .nome a:hover {
+.nome a:hover {
     color: #FF1177;
     -webkit-animation: none;
     -moz-animation: none;
     animation: none;
-  }
+}
 
-  @-webkit-keyframes neon1 {
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+
+@-moz-keyframes neon1 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
     }
     to {
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
     }
-  }
-
-  @-moz-keyframes neon1 {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-    }
-  }
+}
   
 .descricao {
-    text-align: justify;
+    text-align: center;
     padding: 0 30px 20px 30px;
     margin: 0;
     font-size: .8em;
 }
 
 
-/* ::-webkit-input-placeholder {
-    text-align: center;
- }
- 
- :-moz-placeholder { /* Firefox 18- 
-    text-align: center;  
- }
- 
- ::-moz-placeholder {  /* Firefox 19+
-    text-align: center;  
- }
- 
- :-ms-input-placeholder {  
-    text-align: center; 
- } */
-
-
-
-@media(min-width: 700px){
-    
-    
-
-    .logo{
-        margin-left: 80px; 
-    }
-
-    .input{
-        /* top: 414px;
-        right: 55% */
+@media(max-width: 390px){
+    .rotate{
+        bottom: 28%;
+        transform: rotate(-17deg) translateX(-57%)
     }
 }
 
-@media(min-width: 1100px){
+
+/* @media(min-width: 700px) and (orientation: landscape){
+    
+    header{
+        height: 165vh;
+    }
+}  */
+
+/* @media(min-width: 1100px){
 
     .menu-hamburguer{
         display: none;
@@ -299,4 +244,4 @@ a {
     .cadastradas{
         margin-top: 200px;
     }
-}
+} */

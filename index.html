@@ -6,9 +6,6 @@
     <title>Venus - Coleção de Divas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Geo|Roboto" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Concert+One|Fredoka+One|Kalam|Karla|Krona+One|Lobster|Orbitron|Permanent+Marker|Righteous|Roboto+Slab|Russo+One|Source+Sans+Pro" rel="stylesheet"> -->
     <link href='https://fonts.googleapis.com/css?family=Gugi|Ubuntu+Mono|Roboto|IBM+Plex+Mono|Audiowide|Anonymous+Pro|Audiowide|Share+Tech+Mono|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
     <script src="./assets/js/main.js"></script>
@@ -24,7 +21,7 @@
         <header>
             <div class="rotate">
                 <div class="input">
-                    <input id="busca" type="text" name="search" value="" placeholder="Área do conhecimento" onkeyup="buscar()" autocomplete="off"> 
+                    <input id="busca" type="text" name="search" value="" placeholder="Área do conhecimento" onkeyup="buscar()" onfocus="buscaMobile()" autocomplete="off"> 
                 </div>
             </div>
             
@@ -36,70 +33,147 @@
 
 
         <section class="cadastradas">
+
+
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/adelle-araujo.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://www.linkedin.com/in/adellearaujo/">Adelle Araujo</a></p>
+                        <p class="descricao">Designer, especialista em UX/UI e co-fundadora da TUDUX. Trabalha com design de produto e projetos digitais há mais de 10 anos. É professora de UX na Reprograma. </p>
+                    </div>
+            </div>
+
+
             <div class="cards">
                 <div class="foto" >
-                    <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                    <img src="./assets/img/mulheres/alda-rocha.jpg" alt="">
                     <div class="overlay"></div>
                     
                 </div>
                 <div class="info">
-                    <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
-                    <p class="descricao">Designer com M.S. em Comunicação e Semiótica, palestrante com mais de 12 anos de experiência. Uma consultora para projetos de sprint e de design UX / UI em empresas e startups e também trabalha na orientação UX para startups.</p>
+                    <p class="nome"><a href="https://twitter.com/mjcoffeeholick">Alda Rocha</a></p>
+                    <p class="descricao"> Fundadora do Codamos Club e Senior UX designer com mais de 11 anos na proﬁssão, trabalha com conteúdo voltado para experiência, UX writing, cursos na plataforma Alura, posts e palestras sobre o tema.</p>
                 </div>
             </div>
-
-            <div class="cards">
-                <div class="foto" >
-                    <img src="./assets/img/mulheres/debora-garcia.jpg" alt="">
-                    <div class="overlay"></div>
-                    <div class="overlay2"></div>
-                </div>
-                <div class="info">
-                    <p class="nome"><a href="https://twitter.com/carladebona">Débora Garcia</a></p>
-                    <p class="descricao">Linguista</p>
-                </div>
-            </div>
-
 
 
             <div class="cards">
                 <div class="foto" >
-                    <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                    <img src="./assets/img/mulheres/aline-bastos.jpg" alt="">
                     <div class="overlay"></div>
                 </div>
                 <div class="info">
-                    <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
-                    <p class="descricao">Designer com M.S. em Comunicação e Semiótica, palestrante com mais de 12 anos 
-                        de experiência. Uma consultora para projetos de sprint e de design UX / UI em empresas e startups e também trabalha na orientação UX 
-                        para startups.</p>
+                    <p class="nome"><a href="https://www.linkedin.com/in/alinebastos/">Aline Bastos</a></p>
+                    <p class="descricao">Desenvolvedora front-end desde 2002, apaixonada por CSS limpo, organizado e reutilizável, desenvolvimento web responsivo, HTML semântico e compatibilidade inclusiva entre navegadores.</p>
                 </div>
             </div>
 
+
             <div class="cards">
-                <div class="foto" >
-                    <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
-                    <div class="overlay"></div>
-                </div>
-                <div class="info">
-                    <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
-                    <p class="descricao">Designer com M.S. em Comunicação e Semiótica, palestrante com mais de 12 anos 
-                        de experiência. Uma consultora para projetos de sprint e de design UX / UI em empresas e startups e também trabalha na orientação UX 
-                        para startups.</p>
-                </div>
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/caroline-soares.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://www.linkedin.com/in/carolcode/">Caroline Soares</a></p>
+                        <p class="descricao">Estudante de Tecnologia em Sistemas para internet, co-organizadora do Meet-up HTML-SP, produtora de conteúdo sobre tecnologia no Medium, palestrante e criadora do podcast Lovelace. </p>
+                    </div>
             </div>
-                
+
             <div class="cards">
-                <div class="foto" >
-                    <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
-                    <div class="overlay"></div>
-                </div>
-                <div class="info">
-                    <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
-                    <p class="descricao">Designer com M.S. em Comunicação e Semiótica, palestrante com mais de 12 anos 
-                        de experiência. Uma consultora para projetos de sprint e de design UX / UI em empresas e startups e também trabalha na orientação UX 
-                        para startups.</p>
-                </div>
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/beatriz-rizental.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://twitter.com/brizental">Beatriz Rizental</a></p>
+                        <p class="descricao">Desenvolvedora full-stack, entusiasta e contribuidora de projetos open source, com formação em design. Professora de pré-processadores e javascript avançado na Reprograma.</p>
+                    </div>
             </div>
+
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/camila-belo.png" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://br.linkedin.com/in/camila-in%C3%A1cio-belo-da-silva-13486316">Camila Belo</a></p>
+                        <p class="descricao"> Graduada em Análise e Desenvolvimento de Sistema pela Fatec ZL, é desenvolvedora Full-Stack, trabalha com front-end na Lendico Brasil. Professora de React na Reprograma.</p>
+                    </div>
+            </div>
+
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
+                        <p class="descricao">Designer, com mestrado em Comunicação e Semiótica, palestrante com mais de 12 anos  de experiência, consultora para projetos de sprint e UX/UI em empresas e startups. Co-fundadora da Reprograma.</p>
+                    </div>
+            </div>
+
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/debora-garcia.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://twitter.com/deboradom">Débora Garcia</a></p>
+                        <p class="descricao">Linguista, com doutorado em Processamento de Línguas Naturais, recém descoberta desenvolvedora front-end. Aluna da turma 5 da Reprograma.</p>
+                    </div>
+            </div>
+
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/helena-strada.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://www.linkedin.com/in/helenastrada/">Helena Strada</a></p>
+                        <p class="descricao">Instrutora de formação Profissional na Escola SENAI de Informática. Tem bacharelado em Sistemas de Informação e MBA em Desenvolvimento de Aplicações Java e Internet das Coisas. Professora de front-end na Reprograma.
+                        </p>
+                    </div>
+            </div>
+
+
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/isabelle-galvao.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://twitter.com/galvaoiisabelle">Isabelle Galvão</a></p>
+                        <p class="descricao">Com formação em Análise de Sistemas, é desenvolvedora front-end na UP E-commerce solutions. Atuou como designer de UX/UI na Prefeitura Municipal de São Paulo e professora de javascript na Reprograma.
+                       </p>
+                    </div>
+            </div>
+
+           
+            <div class="cards">
+                    <div class="foto" >
+                        <img src="./assets/img/mulheres/patricia-tonella.jpg" alt="">
+                        <div class="overlay"></div>
+
+                    </div>
+                    <div class="info">
+                        <p class="nome"><a href="https://www.linkedin.com/in/ptonella/">Patricia Tonella</a></p>
+                        <p class="descricao">Desenvolvedora front-end há mais de 7 anos, já trabalhou em todos os tipos de empresas, de grandes softwares houses até pequenas startups. </p>
+                    </div>
+            </div>
+
+            
 
         </section>
 
