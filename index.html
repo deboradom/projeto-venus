@@ -24,24 +24,48 @@
         <header>
             <div class="rotate">
                 <div class="input">
-                    <input type="text" placeholder="Área do conhecimento"> 
+                    <input id="busca" type="text" name="search" value="" placeholder="Área do conhecimento" onkeyup="buscar()" autocomplete="off"> 
                 </div>
             </div>
-            <!-- <img class="venus" src="./assets/img/header-mobile.svg" alt=""> -->
-            <!-- <div class="rotate">
-                <div class="input">
-                    <input type="text" placeholder="Área do conhecimento">
-                </div>
-            </div> -->
+            
             <div class="divNuvem">
                 <img class="imgNuvem" src="./assets/img/cloud.svg" alt="">
             </div>
         </header>
 
-        <section class="retornoDaBusca">
+
+
+        <section class="cadastradas">
             <div class="cards">
                 <div class="foto" >
                     <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                    <div class="overlay"></div>
+                    
+                </div>
+                <div class="info">
+                    <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
+                    <p class="descricao">Designer com M.S. em Comunicação e Semiótica, palestrante com mais de 12 anos de experiência. Uma consultora para projetos de sprint e de design UX / UI em empresas e startups e também trabalha na orientação UX para startups.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="foto" >
+                    <img src="./assets/img/mulheres/debora-garcia.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="overlay2"></div>
+                </div>
+                <div class="info">
+                    <p class="nome"><a href="https://twitter.com/carladebona">Débora Garcia</a></p>
+                    <p class="descricao">Linguista</p>
+                </div>
+            </div>
+
+
+
+            <div class="cards">
+                <div class="foto" >
+                    <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                    <div class="overlay"></div>
                 </div>
                 <div class="info">
                     <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
@@ -54,18 +78,7 @@
             <div class="cards">
                 <div class="foto" >
                     <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
-                </div>
-                <div class="info">
-                    <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
-                    <p class="descricao">Designer com M.S. em Comunicação e Semiótica, palestrante com mais de 12 anos 
-                        de experiência. Uma consultora para projetos de sprint e de design UX / UI em empresas e startups e também trabalha na orientação UX 
-                        para startups.</p>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="foto" >
-                    <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                    <div class="overlay"></div>
                 </div>
                 <div class="info">
                     <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
@@ -78,6 +91,7 @@
             <div class="cards">
                 <div class="foto" >
                     <img src="./assets/img/mulheres/carla-de-bona.jpg" alt="">
+                    <div class="overlay"></div>
                 </div>
                 <div class="info">
                     <p class="nome"><a href="https://twitter.com/carladebona">Carla De Bona</a></p>
@@ -88,6 +102,8 @@
             </div>
 
         </section>
+
+        
 
     </container>
 
