@@ -236,7 +236,8 @@ a {
     }
 
     #busca{
-        transform: translateY(120%)
+        transform: translateY(120%);
+        width: 70%;
     }
 
     /* #busca{
@@ -247,6 +248,6 @@ a {
     }
 */
     .input input::placeholder{
-        font-size: 20px;
+        font-size: 16px;
     } 
 }
