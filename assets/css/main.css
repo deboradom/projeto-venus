@@ -3,10 +3,6 @@ body{
     font-family: 'IBM Plex Mono', monospace;
 }
 
-/* (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) */
-
-
-
 container{
     width: 100%;
 }
@@ -16,7 +12,6 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-
 
 .logo {
     margin: 0;
@@ -35,13 +30,9 @@ nav{
 header{
     position: relative;
     width: 100%;
-    height: 88vh;
-    background: url("../img/venusInput.svg") no-repeat center;
-}
-
-.venus{
-    /* background: url("../img/venusInput.svg") no-repeat center; */
-    width: 100%;
+    height: 100vh;
+    background: url("../img/venus-nuvem.svg") no-repeat center;
+    background-size: 100vh
 }
 
 .rotate{
@@ -51,7 +42,7 @@ header{
     bottom: 30.5%;
     width: 67%;
     max-width: 297px;
-    transform: rotate(-17deg) translateX(-47%) translateY(-60%);
+    transform: rotate(-17deg) translateX(-36%) translateY(-178%);
 }
 
 .input{
@@ -63,7 +54,7 @@ header{
     border: none;
     /* padding: 20px 70px; */
     padding: 0.3rem;
-    width: 200px;
+    width: 150px;
     height: 59px;
     color: white;
     font-size: 1.3em;
@@ -71,12 +62,9 @@ header{
 
 .input input::placeholder{
     color: white;
-    font-size: .8em;
+    font-size: .7em;
     text-align: center;
 }
-
-
-
 
 .divNuvem{
     position: absolute;
@@ -94,7 +82,6 @@ header{
 }
 
 .cadastradas{
-    /* background: url("../img/grid-bordeless.svg") no-repeat center; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -107,12 +94,11 @@ header{
     background: url("../img/grid-bordeless.svg") no-repeat center;
     max-width: 300px; 
     margin: 30px;
-    height: 60vh;
+    height: 100%;
     -webkit-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
     -moz-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
     box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
 }
-
 
 .foto{
     display: flex;
@@ -145,7 +131,7 @@ header{
     background: #3C2DCB 50%;
     margin: 0 auto;
     color: white;
-    /* max-width: 300px; */
+    height: 30vh
 }
 
 .nome {
@@ -171,7 +157,6 @@ a {
     animation: neon1 1.5s ease-in-out infinite alternate;
   }
   
-
 .nome a:hover {
     color: #FF1177;
     -webkit-animation: none;
@@ -204,10 +189,9 @@ a {
     font-size: .8em;
 }
 
-
 @media(max-width: 390px){
     .rotate{
-        transform: rotate(-17deg) translateX(-55%) translateY(4%)
+        transform: rotate(-17deg) translateX(-37%) translateY(-160%);
     }
 }
 
@@ -226,49 +210,35 @@ a {
         height: 44px;
     }
 
-
     .cards{
         height: 100vh
     }
 
 }
 
-@media(min-width : 768px) and (max-width : 1024px){
-    .divNuvem{
-        transform: translate(-50%, 5%)
-    }
-}
-
-/* @media(min-width: 700px) and (orientation: landscape){
+@media(max-width: 700px) and (orientation: landscape) and (orientation: portrait){
     
     header{
         height: 165vh;
+        background-size: 175vh
     }
-}  */
 
- @media(min-width: 1100px){
+    .rotate{
+        transform: rotate(-17deg) translateX(-35%) translateY(-235%)
+    }
+
+    .info{
+        height: 55vh;
+    }
+
+    .cards{
+        height: 120vh;
+    }
+} 
+
+ @media(min-width: 1024px){
 
     .menu-hamburguer{
         display: none;
     }
 }
-/*
-    .rotate {
-        left: 49.5%;
-        bottom: 31%;
-        width: 69%;
-    }
-
-    .logo{
-        position: absolute;
-        top: 50px;
-    }
-
-    header{
-        height: 100vh;
-    }
-    
-    .cadastradas{
-        margin-top: 200px;
-    }
-} */
