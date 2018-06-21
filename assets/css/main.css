@@ -131,7 +131,8 @@ header{
     background: #3C2DCB 50%;
     margin: 0 auto;
     color: white;
-    height: 30vh
+    /* height: 30vh */
+    height: 100%;
 }
 
 .nome {
@@ -191,54 +192,61 @@ a {
 
 @media(max-width: 390px){
     .rotate{
-        transform: rotate(-17deg) translateX(-37%) translateY(-160%);
-    }
-}
-
-@media(max-height: 400px){
-    header{
-        background-size: 118%;
-        background-position-Y: 84%;
-    }
-
-    .rotate{
-        transform: rotate(-17deg) translateX(-47%) translateY(-40%)
+        transform: rotate(-17deg) translateX(-37%) translateY(-205%);
     }
 
     #busca{
-        width: 170px;
-        height: 44px;
+        height: 45px;
     }
 
-    .cards{
-        height: 100vh
-    }
 
 }
 
-@media(max-width: 700px) and (orientation: landscape) and (orientation: portrait){
-    
-    header{
-        height: 165vh;
-        background-size: 175vh
-    }
-
-    .rotate{
-        transform: rotate(-17deg) translateX(-35%) translateY(-235%)
-    }
-
-    .info{
-        height: 55vh;
-    }
-
-    .cards{
-        height: 120vh;
-    }
-} 
 
  @media(min-width: 1024px){
 
     .menu-hamburguer{
         display: none;
     }
+}
+
+@media (max-device-width: 750px) and (orientation: landscape){
+    header{
+        background-size: 74%;
+        height: 505px
+    } 
+
+    .rotate{
+        transform: rotate(-17deg) translateX(-22%) translateY(-335%);
+    }
+
+    .input input::placeholder{
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 400px){
+    header{
+        background-size: 185%;
+        /* height: 505px; */
+    }
+
+    .rotate{
+        transform: rotate(-17deg) translateX(-37%) translateY(-285%);
+    }
+
+    #busca{
+        transform: translateY(120%)
+    }
+
+    /* #busca{
+        
+        width: 150px;
+        height: 25px;
+        font-size: 20px;
+    }
+*/
+    .input input::placeholder{
+        font-size: 20px;
+    } 
 }
