@@ -51,7 +51,7 @@ header{
     bottom: 30.5%;
     width: 67%;
     max-width: 297px;
-    transform: rotate(-17deg) translateX(-52%);
+    transform: rotate(-17deg) translateX(-47%) translateY(-60%);
 }
 
 .input{
@@ -107,7 +107,7 @@ header{
     background: url("../img/grid-bordeless.svg") no-repeat center;
     max-width: 300px; 
     margin: 30px;
-    height: 75vh;
+    height: 60vh;
     -webkit-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
     -moz-box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
     box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.2);
@@ -207,11 +207,37 @@ a {
 
 @media(max-width: 390px){
     .rotate{
-        bottom: 28%;
-        transform: rotate(-17deg) translateX(-57%)
+        transform: rotate(-17deg) translateX(-55%) translateY(4%)
     }
 }
 
+@media(max-height: 400px){
+    header{
+        background-size: 118%;
+        background-position-Y: 84%;
+    }
+
+    .rotate{
+        transform: rotate(-17deg) translateX(-47%) translateY(-40%)
+    }
+
+    #busca{
+        width: 170px;
+        height: 44px;
+    }
+
+
+    .cards{
+        height: 100vh
+    }
+
+}
+
+@media(min-width : 768px) and (max-width : 1024px){
+    .divNuvem{
+        transform: translate(-50%, 5%)
+    }
+}
 
 /* @media(min-width: 700px) and (orientation: landscape){
     
@@ -220,12 +246,13 @@ a {
     }
 }  */
 
-/* @media(min-width: 1100px){
+ @media(min-width: 1100px){
 
     .menu-hamburguer{
         display: none;
     }
-
+}
+/*
     .rotate {
         left: 49.5%;
         bottom: 31%;
